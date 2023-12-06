@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    color: #f6f8fc;
+}
+
+img{
+    padding: 5px;
+    margin-left: 30px;
+}
+
+nav div{
+    padding: 10px;
+}
+
+#search-bar{
+    margin-right: 130px;
+    background-color: rgb(234,241,251);
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    padding: 11px;
+    width: 1000px;
+}
+
+#search-bar::placeholder{
+    color: grey;
+    font-size: 18px;
+    font-weight: lighter;
+    border: none;
+    outline: none;
+}
+
+#search-bar:focus{
+    box-shadow: 0px 3px 2px 0px gray;
+    background-color: white;
+}
+
+
+.emailBox{
+    display: grid;
+    text-align: left;
+    grid-row: 8;
+    padding: 40px;
+    grid-column: 1;
+    width: 90vw;
+    gap: 1px;
+    color: black;
+}
+
+.emailBox .emailBoxes{
+    border: none;
+    box-shadow: 0px 0.2px 0px gray;
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: lighter;
+    display: flex;
+    padding: 20px;
+    background-color: white;
+}
+
+.left, .right{
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+h1{
+    padding: 10px;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 3rem;
+    color: red;
+}
+
+.titleDiv{
+    width: 100vw;
+    text-align: center;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 600px) {
+    #search-bar {
+        margin-right: 10px;
+    }
+
+    .emailBox {
+        padding: 10px;
+    }
+
+    .emailBox .emailBoxes {
+        padding: 5px;
+    }
+}
